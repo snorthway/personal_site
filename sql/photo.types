@@ -1,0 +1,2 @@
+create schema photo;
+create type photo.category AS ENUM ('portrait','nature','etcetera','engineering','drawing','painting','design');

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block navbar %}
+	{% include "navbar.html" with photographyactive='class="active"'%}
+{% endblock %}
+
+{% block content %}
+
+<ul id="albums">
+	<li class="hor">
+		<img src="{% static "img/alicia.jpg" %}"/>
+		<h5>Portraits</h5>
+	</li>
+	<li class="hor">
+		<img src="{% static "img/birds.jpg" %}"/>
+		<h5>Nature</h5>
+	</li>
+	<li class="hor">
+		<img src="{% static "img/piano.jpg" %}"/>
+		<h5>Etcetera</h5>
+	</li>
+</ul>
+
+{% endblock %}

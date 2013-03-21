@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block navbar %}
+	{% include "navbar.html" with homeactive='class="active"' %}
+{% endblock %}
+
+{% block content %}
+<div id="about">
+	<div class="hor" id="about-img">
+		<img src="{% static "img/about.jpg" %}" width="253px" height="300px"/>
+	</div>
+	<div class="hor" id="about-text">
+		<h4 class="about">Hi! I'm Steph.</h4>
+		<p class="about">I'm currently a sophomore at <a href="www.olin.edu">Franklin W. Olin College of Engineering</a>. My passions lie in sustainability, visual art, semiconductor devices, and fighting. I recently got into web design, too. This site contains an assortment of things I'd like the world to see, so take your time and have a look around.</p>
+	</div>
+</div>
+
+{% endblock %}

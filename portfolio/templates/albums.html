@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block navbar %}
+	{% include "navbar.html" with sketchbookactive='class="active"'%}
+{% endblock %}
+
+{% block content %}
+<p>Photo albumz</p>
+{% endblock %}
