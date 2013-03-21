@@ -12,7 +12,9 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
-DATABASES['default'] = dj_database_url.config()
+POSTGRES_URL = "HEROKU_POSTGRESQL_GREEN_URL"
+
+DATABASES['default'] = dj_database_url.config(defualt=os.environ[POSTGRES_URL])
 
 # DATABASES = {
 #     'default': {
