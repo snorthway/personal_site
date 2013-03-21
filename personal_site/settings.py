@@ -14,7 +14,7 @@ MANAGERS = ADMINS
 
 POSTGRES_URL = "HEROKU_POSTGRESQL_GREEN_URL"
 
-DATABASES['default'] = dj_database_url.config(default=os.environ[POSTGRES_URL])
+DATABASES = {'default': dj_database_url.config(default=os.environ[POSTGRES_URL])}
 
 # DATABASES = {
 #     'default': {
