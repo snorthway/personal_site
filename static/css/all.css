@@ -87,8 +87,8 @@ footer{
 	width:100%;
 	color: #666E73;
 	height:50px;
-	bottom:0;
-	position:static;
+/*	bottom:0;
+	position:static;*/
 }
 
 footer > p{
@@ -151,11 +151,25 @@ p.about, h4.about{
 #albums img{
 	height:389px;
 	width:259px;
+	outline: solid #BFB6AA 5px;
+	outline-offset: 10px;
 }
 
 #albums h5{
-	color: #F2C8A2;
+	color: #BFB6AA;
 	font-size: 1.3em;
-	font-family: Overlock;
+	font-family: Poiret One;
+	border-left: solid #BFB6AA 1px;
+	border-right: solid #BFB6AA 1px;
 
+}
+
+/*Album Pages*/
+#photo-container{
+	display:inline-block;
+}
+
+.thumbnail{
+	height:60px;
+	width:60px;
 }

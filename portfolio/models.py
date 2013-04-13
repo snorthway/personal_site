@@ -6,6 +6,7 @@ class Photo(models.Model):
 	category = models.CharField(max_length=30,unique=False)
 	subcategory = models.CharField(max_length=30,unique=False)
 	title = models.CharField(max_length=50,unique=True)
+	filename = models.CharField(max_length=50,unique=True)
 	place = models.CharField(max_length=100,unique=False)
 	date = models.DateField()
 
