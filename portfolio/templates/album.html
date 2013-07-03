@@ -7,8 +7,18 @@
 
 {% block content %}
 	<div id="photo-container">
+		<ul class="photo-container-inner">
 		{% for f in files %}
-			<img src={{f}}>
+			<li class="photo">
+				<img src={{f}} id="">
+			</li>
 		{% endfor %}
+		</ul>
 	</div>
 {% endblock %}
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".photo").on("click")
+	});
+</script>

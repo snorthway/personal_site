@@ -67,7 +67,7 @@ STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+STATIC_URL = 'http://snorthway_portfolio.s3-website-us-east-1.amazonaws.com/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -84,6 +84,13 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
+
+STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
+# Amazon Web Services stuff
+AWS_ACCESS_KEY_ID = 'AKIAINFL2LN636ONUN4Q'
+AWS_SECRET_ACCESS_KEY_ID = 'l+72L5JED9H1TGSb78p3cmDzXwh9BEaX22of7dhv'
+AWS_STORAGE_BUCKET_NAME = 'snorthway_portfolio'
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = 'gjghm_(c+x5u2mo_%67&amp;-flyn4@x7e2^$l6%ednlo@)v%887zq'
@@ -138,6 +145,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
+    'storages',
 )
 
 # A sample logging configuration. The only tangible logging

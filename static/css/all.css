@@ -173,3 +173,12 @@ p.about, h4.about{
 	height:60px;
 	width:60px;
 }
+
+.photo{
+	outline: solid #BFB6AA 5px;
+	outline-offset: 10px;
+}
+
+ol{
+	list-style-type: none;
+}
