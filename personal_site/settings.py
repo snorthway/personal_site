@@ -14,18 +14,18 @@ MANAGERS = ADMINS
 
 POSTGRES_URL = "HEROKU_POSTGRESQL_GREEN_URL"
 
-# DATABASES = {'default': dj_database_url.config(default=os.environ[POSTGRES_URL])}
+DATABASES = {'default': dj_database_url.config('postgres://uhidizxnlddpsi:ljpSYLdey826L_MDbCjd-FM93_@ec2-54-243-125-2.compute-1.amazonaws.com:5432/d5v0d59mg3hgg8')}
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'stephn',                      # Or path to database file if using sqlite3.
-        'USER': 'stephn',                      # Not used with sqlite3.
-        'PASSWORD': 't3kant',                  # Not used with sqlite3.
-        'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
-        'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+#         'NAME': 'stephn',                      # Or path to database file if using sqlite3.
+#         'USER': 'stephn',                      # Not used with sqlite3.
+#         'PASSWORD': 't3kant',                  # Not used with sqlite3.
+#         'HOST': 'localhost',                      # Set to empty string for localhost. Not used with sqlite3.
+#         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+#     }
+# }
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
